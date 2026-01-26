@@ -1,16 +1,16 @@
-# Beyond the First Click: E-Commerce Repeat Customer Analysis (Power BI + SQL + Excel) 
+# Beyond the First Click: Customer Funnel & Retention Analysis (Power BI + SQL) 
 
 ## TL;DR
-**Problem:** Repeat customers drive most e-commerce profit, but loyalty was stagnant and poorly understood.
+**Problem:** E-commerce growth depends on converting first-time buyers into repeat customers, but drop-offs across the customer funnel were unclear, and revenue risk was hidden.
 
-**Process:** Used **SQL + Excel + Power BI** to segment 4.5K+ customers, by behavior, cohort, churn risk, and fraud signals, then visualized insights in an interactive dashboard.
+**Process:** Used **SQL, Excel, and Power BI** to map the customer funnel from first purchase to repeat behavior, segment users by loyalty and churn risk, and overlay fraud signals to identify revenue leakage.
 
 **Result:** 
-- Identified that **8% of users generated 45% of revenue**, but were at **high churn risk**
-- Uncovered fraud overlaps with churn cohorts
-- Flagged Electronics & Beauty as top loyalty-driving categories
+- Identified that **8% of customers generated 45% of revenue**, but sat in **high-risk funnel stages**
+- Highlighted **$3.49M** in revenue at risk due to churn-prone funnel segments
+- Flagged category-level differences in funnel conversion and retention strength
 
-**Takeaway:** Behavioral segmentation and churn logic can uncover high-value customers at risk, enabling smarter retention campaigns.
+**Takeaway:** Funnel-based retention analysis reveals where customers drop off, which segments drive revenue, and where targeted retention strategies can deliver the highest ROI.
 
 ## Dashboard Preview
 Power BI dashboard with:
@@ -21,20 +21,20 @@ Power BI dashboard with:
 
 Designed as a quick-scan interface for stakeholder decision-making.
 
-![CRM dashboard preview](crm_dashboard_preview.png)
+![crm dashboard preview](crm_dashboard_preview.png)
 
 ## Table of Contents
  * [Overview](#overview)
  * [Tools Used](#tools-used)
  * [Dataset Snapshot](#dataset-snapshot)
- * [Key Insights & Business Impact](#key-insights--business-impact)
+ * [Key Funnel Insights & Business Impact](#key-funnel-insights--business-impact)
  * [Case Study: Full Walkthrough](#case-study-full-walkthrough)
  * [What I'd Explore Next](#what-id-explore-next)
  * [What This Project Demonstrates](#what-this-project-demonstrates)
  * [Let's Connect](#lets-connect)
 
 ## Overview
-Using a simulated dataset of 4,500 e-commerce customers, this project explores what drives repeat purchase behavior and retention. SQL was used to segment customers by churn risk, loyalty, and fraud indicators, then visualized in Power BI to support business-facing insights on revenue, category performance, and customer value.
+This project analyzes the **e-commerce customer funnel**, focusing on how users move from first purchase to repeat behavior and where revenue leakage occurs. Using SQL-based segmentation and a Power BI dashboard, I examined retention patterns, churn risk, fraud overlap, and category-level funnel performance to support business and marketing decision-making.
 
 ## Tools Used
 - **MySQL:** Data modeling, cohort segmentation, churn & fraud logic
@@ -52,21 +52,22 @@ Using a simulated dataset of 4,500 e-commerce customers, this project explores w
 |Average Orders/Customer | 10.02      |
 ```
 
-## Key Insights & Business Impact
-**Retention Segments**
-- **Loyal Base:** 45% of customers repeat consistently; 30% show moderate loyalty.
-- **Super Loyal:** Just 9% of customers generate a disproportionate share of revenue -> a high-value group for retention efforts.
+## Key Funnel Insights & Business Impact
+**Funnel Concentration**
+* A small **high-value funnel segment (8%)** contributes nearly half of total revenue.
+* These users sit deeper in the funnel but still show elevated churn risk → retention priority. 
 
-**Revenue at Risk**
-- **$3.49M in revenue (43%)** comes from customers in high churn-risk segments.
-- Suggests a strong need for lifecycle marketing to prevent leakage.
+**Funnel Leakage (Revenue at Risk)**
+* **43% of revenue** comes from customers showing churn signals.
+* Indicates drop-offs after initial conversion, not acquisition issues.
 
-**Fraud Overlap**
-- High churn cohorts show elevated fraud flags, highlighting a link between risk and disengagement.
+**Risk Overlay (Fraud + Churn)**
+* Fraud flags cluster around late-stage funnel users with declining engagement.
+* Suggests disengagement and risk rise together, impacting profitability.
 
-**Category Patterns**
-- **Home** & **Sports** categories show high stickiness and repeat rates.
-- **Fashion** drives strong top-line growth but weaker retention, indicating more impulse-led customers.
+**Category Funnel Performance**
+* Home & Sports show strong repeat conversion.
+* Fashion shows high entry but weaker funnel progression → acquisition-heavy, retention-light.
 
 ## Case Study: Full Walkthrough
 See the detailed business context, SQL logic, and dashboard decisions behind this project:
@@ -83,6 +84,7 @@ See the detailed business context, SQL logic, and dashboard decisions behind thi
 - Exposure to segmentation, churn scoring, and fraud overlay techniques
 - Understanding of how user behavior links to revenue risk and retention strategy
 - Practice turning complex data into stakeholder-facing insights
+- Ability to frame customer behavior through a funnel and retention lens, not just descriptive churn metrics
 
 ## Let's Connect
 I'm building my career in data analytics and love uncovering business insights through customer behavior and segmentation. Feel free to reach out via:
