@@ -1,14 +1,14 @@
 # Beyond the First Click: Customer Funnel & Retention Analysis (Power BI + SQL) 
 
 ## TL;DR
-**Problem:** E-commerce growth depends on converting first-time buyers into repeat customers, but drop-offs across the customer funnel were unclear, and revenue risk was hidden.
+**Problem:** Revenue growth depends on retaining high-value customers, but churn-prone funnel segments were not clearly quantified.
 
-**Process:** Used **SQL, Excel, and Power BI** to map the customer funnel from first purchase to repeat behavior, segment users by loyalty and churn risk, and overlay fraud signals to identify revenue leakage.
+**Process:** Modeled customer funnel stages and segmented users by churn and fraud risk to identify revenue concentration and leakage points.
 
 **Result:** 
-- Identified that **8% of customers generated 45% of revenue**, but sat in **high-risk funnel stages**
-- Highlighted **$3.49M** in revenue at risk due to churn-prone funnel segments
-- Flagged category-level differences in funnel conversion and retention strength
+- **8% of customers** drive **45% of revenue**
+- **$3.49M** in revenue exposed to churn risk
+- Category-level funnel weaknesses identified
 
 **Takeaway:** Funnel-based retention analysis reveals where customers drop off, which segments drive revenue, and where targeted retention strategies can deliver the highest ROI.
 
@@ -28,7 +28,7 @@ Designed as a quick-scan interface for stakeholder decision-making.
  * [Tools Used](#tools-used)
  * [Dataset Snapshot](#dataset-snapshot)
  * [Key Funnel Insights & Business Impact](#key-funnel-insights--business-impact)
- * [Case Study: Full Walkthrough](#case-study-full-walkthrough)
+ * [Strategic Implications](#strategic-implications)
  * [What I'd Explore Next](#what-id-explore-next)
  * [What This Project Demonstrates](#what-this-project-demonstrates)
  * [Let's Connect](#lets-connect)
@@ -58,6 +58,8 @@ This project analyzes the **e-commerce customer funnel**, focusing on how users 
 * These users sit deeper in the funnel but still show elevated churn risk → retention priority. 
 
 **Funnel Leakage (Revenue at Risk)**
+> Churn risk was defined as customers with declining purchase frequency and extended inactivity beyond the cohort median.
+
 * **43% of revenue** comes from customers showing churn signals.
 * Indicates drop-offs after initial conversion, not acquisition issues.
 
@@ -69,11 +71,11 @@ This project analyzes the **e-commerce customer funnel**, focusing on how users 
 * Home & Sports show strong repeat conversion.
 * Fashion shows high entry but weaker funnel progression → acquisition-heavy, retention-light.
 
-## Case Study: Full Walkthrough
-See the detailed business context, SQL logic, and dashboard decisions behind this project:
-
-[View the full case study here](https://docs.google.com/document/d/1QslwGDxt7Uj1MzdJjwGdME_j7KGeKJMZOj6Lu6rDnZg/edit?usp=sharing)
-
+## Strategic Implications
+* Prioritize retention campaigns for high-value churn-risk segments
+* Reallocate marketing budget from acquisition-heavy categories (Fashion) to retention-strengthened categories
+* Introduce fraud monitoring checkpoints in late-stage funnel users
+  
 ## What I'd Explore Next
 - **LTV Prediction Modeling:** Estimate customer lifetime value using purchase patterns
 - **Retention Simulation:** Test loyalty-program changes and model uplift scenarios
