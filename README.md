@@ -29,6 +29,7 @@ Designed as a quick-scan interface for stakeholder decision-making.
  * [Dataset Snapshot](#dataset-snapshot)
  * [Key Funnel Insights & Business Impact](#key-funnel-insights--business-impact)
  * [Strategic Implications](#strategic-implications)
+ * [GenAI Customer Insights Simulator](#genai-customer-insights-simulator)
  * [What I'd Explore Next](#what-id-explore-next)
  * [What This Project Demonstrates](#what-this-project-demonstrates)
  * [Let's Connect](#lets-connect)
@@ -75,7 +76,11 @@ This project analyzes the **e-commerce customer funnel**, focusing on how users 
 * Prioritize retention campaigns for high-value churn-risk segments
 * Reallocate marketing budget from acquisition-heavy categories (Fashion) to retention-strengthened categories
 * Introduce fraud monitoring checkpoints in late-stage funnel users
-  
+
+## GenAI Customer Insights Simulator
+Interactive Streamlit app showcasing top 20 predicted CLV customers.
+Try it here: [Launch App](https://shrey0561-beyond-the-first-click-custome-genai-simulator-ryznlg.streamlit.app/)
+
 ## What I'd Explore Next
 - **LTV Prediction Modeling:** Estimate customer lifetime value using purchase patterns
 - **Retention Simulation:** Test loyalty-program changes and model uplift scenarios
