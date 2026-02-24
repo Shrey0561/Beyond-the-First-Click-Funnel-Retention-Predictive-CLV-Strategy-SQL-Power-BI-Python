@@ -1,16 +1,22 @@
-# Beyond the First Click: Customer Funnel & Retention Analysis (Power BI + SQL) 
+# Predictive Customer Lifetime Value & Retention Intelligence (Power BI + SQL + Scikit-Learn + Streamlit Deployment) 
 
 ## TL;DR
-**Problem:** Revenue growth depends on retaining high-value customers, but churn-prone funnel segments were not clearly quantified.
+**Problem:** Revenue growth depends on retaining high-value customers, but revenue concentration and churn exposure were not clearly quantified.
 
-**Process:** Modeled customer funnel stages and segmented users by churn and fraud risk to identify revenue concentration and leakage points.
+**Approach:**
+* Modeled customer funnel stages using SQL
+* Identified revenue concentration and leakage points
+* Built a **Random Forest** model to predict **Customer Lifetime Value (CLV)**
+* Deployed an **AI-style Streamlit** simulator for business insight generation
 
 **Result:** 
-- **8% of customers** drive **45% of revenue**
+- **8% of customers** generate **45% of total revenue**
 - **$3.49M** in revenue exposed to churn risk
-- Category-level funnel weaknesses identified
+- **43%** of revenue linked to customers showing churn signals
+- **Top 20 high-value customers** identified using predictive CLV modeling
 
-**Takeaway:** Funnel-based retention analysis reveals where customers drop off, which segments drive revenue, and where targeted retention strategies can deliver the highest ROI.
+**Business Impact:**
+Shift from reactive churn reporting → proactive revenue prioritization
 
 ## Dashboard Preview
 Power BI dashboard with:
@@ -29,18 +35,30 @@ Designed as a quick-scan interface for stakeholder decision-making.
  * [Dataset Snapshot](#dataset-snapshot)
  * [Key Funnel Insights & Business Impact](#key-funnel-insights--business-impact)
  * [Strategic Implications](#strategic-implications)
- * [GenAI Customer Insights Simulator](#genai-customer-insights-simulator)
+ * [AI-Powered CLV Insight Simulator (Streamlit)](#ai-powered-clv-insight-simulator-streamlit)
  * [What I'd Explore Next](#what-id-explore-next)
  * [What This Project Demonstrates](#what-this-project-demonstrates)
+ * [Strategic Takeaway](#strategic-takeaway)
  * [Let's Connect](#lets-connect)
 
 ## Overview
-This project analyzes the **e-commerce customer funnel**, focusing on how users move from first purchase to repeat behavior and where revenue leakage occurs. Using SQL-based segmentation and a Power BI dashboard, I examined retention patterns, churn risk, fraud overlap, and category-level funnel performance to support business and marketing decision-making.
+This project analyzes the full **e-commerce customer lifecycle**, from acquisition to repeat purchase behavior, and quantifies revenue concentration, churn exposure, and retention leverage points.
+
+The workflow includes:
+* SQL-based funnel and cohort segmentation
+* Revenue-at-risk analysis
+* Fraud and churn overlay detection
+* Predictive Customer Lifetime Value (CLV) modeling
+* Deployment of an AI-style decision-support app
+
+**The Goal:** Enable data-driven retention strategies that maximize long-term profitability.
 
 ## Tools Used
-- **MySQL:** Data modeling, cohort segmentation, churn & fraud logic
+- **MySQL:** Funnel & segmentation logic
 - **Microsoft Excel:** Data cleaning and validation
-- **Power BI:** Dashboard design, interactivity, and storytelling
+- **Power BI:** Dashboard design, and storytelling
+- **Scikit-Learn (Random Forest):** Predictive CLV modeling
+- **Streamlit:** Deployment of interactive insight simulator
 
 ## Dataset Snapshot
 ```markdown
@@ -75,11 +93,19 @@ This project analyzes the **e-commerce customer funnel**, focusing on how users 
 ## Strategic Implications
 * Prioritize retention campaigns for high-value churn-risk segments
 * Reallocate marketing budget from acquisition-heavy categories (Fashion) to retention-strengthened categories
-* Introduce fraud monitoring checkpoints in late-stage funnel users
+* Introduce fraud monitoring checkpoints in the late-stage funnel for users
 
-## GenAI Customer Insights Simulator
-Interactive Streamlit app showcasing top 20 predicted CLV customers.
-Try it here: [Launch App](https://shrey0561-beyond-the-first-click-custome-genai-simulator-ryznlg.streamlit.app/)
+## AI-Powered CLV Insight Simulator (Streamlit)
+An interactive web application was built to simulate AI-generated business insights for the top 20 predicted high-value customers.
+
+The app: 
+* Displays predicted high-CLV customers
+* Visualizes CLV distribution
+* Generates marketing and retention recommendations
+* Demonstrates deployment of analytics into a usable business interface
+
+Live App : [Launch App](https://shrey0561-beyond-the-first-click-custome-genai-simulator-ryznlg.streamlit.app/)
+This bridges analytics and product thinking, moving beyond dashboards into deployable insight systems.
 
 ## What I'd Explore Next
 - **LTV Prediction Modeling:** Estimate customer lifetime value using purchase patterns
@@ -87,11 +113,20 @@ Try it here: [Launch App](https://shrey0561-beyond-the-first-click-custome-genai
 - **Win-back analysis:** Identify traits of customers who return after churning
 
 ## What This Project Demonstrates
-- Ability to build end-to-end customer analytics workflows (from SQL logic to Power BI dashboards)
-- Exposure to segmentation, churn scoring, and fraud overlay techniques
-- Understanding of how user behavior links to revenue risk and retention strategy
-- Practice turning complex data into stakeholder-facing insights
-- Ability to frame customer behavior through a funnel and retention lens, not just descriptive churn metrics
+* End-to-end customer analytics workflow (SQL → BI → ML → Deployment)
+* Revenue-focused segmentation and funnel analysis
+* Ability to quantify churn exposure and revenue concentration
+* Application of machine learning to business value prediction
+* Translation of predictive outputs into stakeholder-facing tools
+* Product mindset: deploying insights, not just analyzing data
+
+## Strategic Takeaway
+Instead of treating churn as a reporting metric, this project reframes retention as a revenue optimization problem.
+By identifying high-value customers early and quantifying revenue at risk, businesses can:
+* Allocate marketing budget more efficiently
+* Prioritize retention over broad acquisition
+* Reduce revenue volatility
+* Improve long-term customer profitability
 
 ## Let's Connect
 I'm building my career in data analytics and love uncovering business insights through customer behavior and segmentation. Feel free to reach out via:
