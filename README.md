@@ -105,6 +105,7 @@ The app:
 * Demonstrates deployment of analytics into a usable business interface
 
 Live App : [Launch App](https://shrey0561-beyond-the-first-click-custome-genai-simulator-ryznlg.streamlit.app/)
+
 This bridges analytics and product thinking, moving beyond dashboards into deployable insight systems.
 
 ## What I'd Explore Next
