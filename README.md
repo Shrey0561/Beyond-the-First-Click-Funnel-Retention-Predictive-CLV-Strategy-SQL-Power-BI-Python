@@ -1,4 +1,4 @@
-# Predictive Customer Lifetime Value & Retention Intelligence (Power BI + SQL + Scikit-Learn + Streamlit Deployment) 
+# Beyond the First Click: Funnel Retention & Predictive CLV Strategy (SQL + Power BI + Python + Streamlit)
 
 ## TL;DR
 **Problem:** Revenue growth depends on retaining high-value customers, but revenue concentration and churn exposure were not clearly quantified.
